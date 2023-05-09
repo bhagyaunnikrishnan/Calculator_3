@@ -184,4 +184,5 @@ btnEquals.grid(row=6, column=2, pady=1)
 
 #######################################################################################################################################
 
+label = Label(MainFrame, text="Developed by Bhagya Unnikrishnan").grid(row=8, column=0, columnspan=4, pady=1)
 window.mainloop()
