@@ -29,8 +29,25 @@ def sc(event):
         result=str(m.log10(float(no)))
     if text=='ln':
         result=str(m.log(float(no)))
-    if text=='sqrt':
-        result=str(m.(float(no)))
+    if text=='Sqrt':
+        result=str(m.sqrt(float(no)))
+    if text=='x!':
+        result=str(m.factorial(float(no)))
+    if text=='1/x':
+        result=str(1/(float(no)))
+    if text=='pi':
+        if no=="":
+            result=str(m.pi)
+        else:
+            result=str(float(no) * m.pi)
+    if text=='e':
+        if no=="":
+            result=str(m.e)
+        else:
+            result=str(m.e**float(no))
+
+    e.delete(0, END)
+    e.insert(0, result)
 
 
 
