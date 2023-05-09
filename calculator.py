@@ -1,9 +1,9 @@
 from tkinter import *
 import math
 window = Tk()
-blank_space = ""
+blank_space = " "
 window.configure(bg="#7F8C8D")
-window.title("Scientific Calculator")
+window.title(40 * blank_space + "Scientific Calculator")
 window.resizable(width=FALSE, height=False)
 window.geometry("438x573+460+40")
 
